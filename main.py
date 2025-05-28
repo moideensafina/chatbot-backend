@@ -41,8 +41,10 @@ app.add_middleware(
 
 # --- Configuration ---
 # CHANGE 2: Change variable name to GOOGLE_API_KEY
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
-TAVILY_API_KEY = os.getenv("TAVILY_API_KEY")
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY") or "AIzaSyC6Ci97cNqkNFkDggHVnvsv_go77HfVtxY"
+TAVILY_API_KEY = os.getenv("TAVILY_API_KEY") or "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"
+
+
 
 # CHANGE 3: Update check for Google API key
 if not GOOGLE_API_KEY:
