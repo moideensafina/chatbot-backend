@@ -24,8 +24,8 @@ app = FastAPI()
 
 # --- CORS Configuration ---
 origins = [
-    "https://safina-aichat.onrender.com/",
-    "https://safina-aichat.onrender.com/",
+    "https://safina-aichat.onrender.com",
+    "https://safina-aichat.onrender.com",
 ]
 
 app.add_middleware(
